@@ -19,14 +19,14 @@ export function Card({ user }: User) {
       rounded="lg"
       height="120px"
     >
-      <HStack spacing={["1", "4"]} m={["1", "4"]} w="100%">
+      <HStack spacing={["1", "4"]} mx={["1", "4"]} my="4" w="100%">
         <Avatar size="lg" name={user.name} src={user.profileLink} />
         <Divider orientation="vertical" borderColor="gray.700" />
         <VStack spacing="2px" fontSize="small">
           <strong style={{ textTransform: "capitalize" }}>{user.name}</strong>
           <Text color="gray.500">{user.gender}</Text>
           <Text color="gray.500">{user.birthDate}</Text>
-          <Text>{user.email}</Text>
+          <Text color="gray.200">{user.email}</Text>
         </VStack>
       </HStack>
     </Flex>
