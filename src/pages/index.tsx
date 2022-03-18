@@ -134,7 +134,7 @@ export default function Home() {
           ) : (
             <CardGrid usersList={temporaryUsers} />
           )}
-          {temporaryUsers.length !== users.length ? (
+          {userSearch !== "" ? null : temporaryUsers.length !== users.length ? (
             <Button bg="#1A365D" size="md" onClick={handleClickShowMore}>
               Mostrar mais
             </Button>
